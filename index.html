@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility Quiz practice project" />
+    <title>General Science Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Science Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#student-info">INFO</a></li>
+                <li><a href="#objectives">OBJECTIVES</a></li>
+                <li><a href="#essay">ESSAY</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+        <form action=" https://httpbin.org/forms/post" method="post">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="student-name">Name:</label>
+                    <input type="text" id="student-name" name="student-name">
+                </div>
+                <div class="info">
+                    <label for="student-email">Email:</label>
+                    <input type="email" id="student-email" name="student-email">
+                </div>
+                <div class="info">
+                    <label for="birth-date">D.O.B:<span class="sr-only">(Date of Birth)</span></label>
+                    <input type="date" id="birth-date" name="birth-date">
+                </div>
+            </section>
+            <section role="region" aria-labelledby="objectives">
+                <h2 id="objectives">Objectives</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="q1">
+                        <legend>A male cow is called?</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q1-a1">
+                                    <input type="radio" id="q1-a1" name="a1" value="Ox">Ox
+                                </label>
+                            </li>
+
+                            <li>
+                                <label for="q1-a2">
+                                    <input type="radio" id="q1-a2" name="a1" value="yak">Yak
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="q2">
+                        <legend>The energy produced by the sun and stars is due to?</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q2-a1">
+                                    <input type="radio" id="q2-a1" name="a2" value="nuclear-fusion">Nuclear Fusion
+                                </label>
+                            </li>
+
+                            <li>
+                                <label for="q2-a2">
+                                    <input type="radio" id="q2-a2" name="a2" value="nuclear-fission">Nuclear
+                                    Fission
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+                <div class="question-block">
+                    <p>3</p>
+                    <fieldset class="question" name="q3">
+                        <legend>The nucleus is the powerhouse of the cell</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q3-a1">
+                                    <input type="radio" id="q3-a1" name="a3" value="true">True
+                                </label>
+                            </li>
+
+                            <li>
+                                <label for="q3-a2">
+                                    <input type="radio" id="q3-a2" name="a3" value="false">False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+                <div class="question-block">
+                    <p>4</p>
+                    <fieldset class="question" name="q4">
+                        <legend>Evapotranspiration describes the loss of plant water due to two processes</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q4-a1">
+                                    <input type="radio" id="q4-a1" name="a4" value="true">True
+                                </label>
+                            </li>
+
+                            <li>
+                                <label for="q4-a2">
+                                    <input type="radio" id="q4-a2" name="a4" value="false">False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="essay">
+                <h2 id="essay">Essay</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="eq-1">Define pollination.</label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="ea1" id="eq-1" cols="40" rows="5"></textarea>
+                    </div>
+
+                    <div class="question-block">
+                        <label for="eq-2">What is photosynthesis?</label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="ea2" id="eq-2" cols="40" rows="5"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <address>
+            Oyarifa, Accra-Ghana<br>
+            nasieduahn@gmail.com<br>
+            (233) 000 000 000
+        </address>
+    </footer>
+</body>
+</html>
+
+<!-- did not include accesskeys -->
